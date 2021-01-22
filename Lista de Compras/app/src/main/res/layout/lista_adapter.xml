@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listaAdapter_Produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nome Produto"/>
+
+        <EditText
+            android:id="@+id/listaAdapter_Qtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:text="0"
+            android:inputType="number"
+            />
+
+
+        <CheckBox
+            android:id="@+id/listaAdapter_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

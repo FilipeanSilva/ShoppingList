@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TrackShop</string>
+    <string name="title_activity_novo_produto">NovoProdutoActivity</string>
+    <string name="moeda">€</string>
+    <string name="novo_produto">Novo Produto</string>
+    <string name="txt_lista_compras">Lista Compras</string>
+    <string name="txt_carrinho">Carrinho</string>
+    <string name="txt_list_rico_compras">Histórico Compras</string>
+    <string name="txt_configura">Configurações</string>
+    <string name="add_produto">Adicionar Produto à Lista de Compras</string>
+    <string name="preco_prod">Preço do Produto</string>
+    <string name="categoria">Categoria</string>
+    <string name="nome_produto">Nome do Produto</string>
+    <string name="remover_selecionados">Remover produtos selecionados da Lista</string>
+    <string name="add_selecionados">Adicionar produtos selecionados ao Carrinho</string>
+
+    <!--Comeca a partir daqui-->
+    <string-array name="categorias">
+        <item>Mercearia</item>
+        <item>Frescos</item>
+        <item>Bebidas</item>
+        <item>Laticinios</item>
+        <item>Congelados</item>
+        <item>Bebé</item>
+        <item>Higiene</item>
+        <item>Limpeza</item>
+        <item>Animais</item>
+        <item>Outros</item>
+    </string-array>
+
+</resources>

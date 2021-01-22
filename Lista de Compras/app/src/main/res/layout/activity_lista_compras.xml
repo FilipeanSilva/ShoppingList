@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvCategoria2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            app:layout_constraintBottom_toTopOf="@+id/spListaCompras"
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spListaCompras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoria2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lvLista">
+
+            <Spinner
+                android:id="@+id/listaCompras_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lvLista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginHorizontal="20dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/spListaCompras"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnRemover">
+        <ListView
+            android:id="@+id/listaCompras_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2px" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/btnRemover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintTop_toBottomOf="@+id/lvLista"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddd">
+        <Button
+            android:id="@+id/listaCompras_Remover"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:text="@string/remover_selecionados"
+            android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/btnAddd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintTop_toBottomOf="@+id/btnRemover"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/listaCompras_Adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:text="@string/add_selecionados"
+            android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

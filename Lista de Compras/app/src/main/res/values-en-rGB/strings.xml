@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrackShop</string>
+    <string name="title_activity_novo_produto">NewProductActivity</string>
+    <string name="moeda">£</string>
+    <string name="novo_produto">New Product</string>
+    <string name="txt_lista_compras">Shopping List</string>
+    <string name="txt_carrinho">Cart</string>
+    <string name="txt_list_rico_compras">History</string>
+    <string name="txt_configura">Configurations</string>
+    <string name="add_produto">Add product to the Shopping List</string>
+    <string name="preco_prod">Product Price</string>
+    <string name="categoria">Category</string>
+    <string name="nome_produto">Product Name</string>
+    <string name="remover_selecionados">Remove selected products from List</string>
+    <string name="add_selecionados">Add selected product to Cart</string>
+
+    <string-array name="categorias">
+        <item>Grocery</item>
+        <item>Fresh</item>
+        <item>Drinks</item>
+        <item>Dairy Products</item>
+        <item>Frozen</item>
+        <item>Baby</item>
+        <item>Hygiene</item>
+        <item>Cleaning</item>
+        <item>Animals</item>
+        <item>Others</item>
+    </string-array>
+</resources>
